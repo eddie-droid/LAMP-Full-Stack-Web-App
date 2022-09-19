@@ -1,1 +1,2 @@
-# Senior-Comps-Code
+# Senior-Comps-Code Repository
+Eddie Valdez
