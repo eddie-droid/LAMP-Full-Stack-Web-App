@@ -1,21 +1,24 @@
 # Replication Instructions and Code Architechure Overview
 
 My web app is online and able to be accessed. You can access it by visiting https://eddievaldez.org/explorela/explorela.html
-However I will provide further instructions and overview. 
+
+Below are instructions to be able to replicate or build on my project.
 
 # Replication Instructions
 
-In order to replicate my project in the case you want to add to it or modify it, you can follow the following steps.
+In order to replicate my project, you can perform the following steps.
 
-- Download all files in the ExploreLACode folder. You can use any text editor to all relevant files.
-- Next you will have to mimci creating a host server and client using localhost and XAMPP
-- Download the a version of XAMPP compatible with your device.
-- Install and set up XAMPP
-- On XAMPP create a MySQL database. Populate this databse using the provided sql files in the Database Folder. 
-- Move all files downloaded from XAMPP into the htdocs solder where XAMPP was donlaoded.
-- Then, in all the PHP pages that you donlaoded with ExploreLA, modify MySQL login details to match your account.
-If you everything right you should be all set up and ready to add locations.You can do so by doing the following steps:
--Downlaod and run the webscraping files listed undder Webscraping code. You can add locations by finding a the place id of a lcoation you want to add. you can use google to do this. 
+- Download all files in the ExploreLACode folder. You can use any text editor.
+- Next you will have to mimic creating a host server and client with your local machine using XAMPP.
+- Download a version of XAMPP compatible with your device.
+- Install and set up XAMPP.
+- On XAMPP create a new MySQL database. Populate this database by importing the provided MySQL file in the Database Folder. 
+- Move all files downloaded from XAMPP into the htdocs folder where XAMPP was downloaded.
+- Then, in all the PHP pages that you downloaded with ExploreLA, modify MySQL login details to match your account.
+
+You should be all set up and ready to add locations.You can do so by doing the following steps:
+-Downlaod and run the Data Collection files provided inside the Data Collection code. You can add locations by finding a the 'place_id' of a lcoation you want to add. You can use google maps to do this. 
+
 -You will need to create a new google maps api key. Do not use mine please. 
 
 # Code Architecture
