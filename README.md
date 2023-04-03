@@ -17,7 +17,7 @@ In order to replicate my project, you can perform the following steps.
 - Then, in all the PHP pages that you downloaded with ExploreLA, modify MySQL login details to match your account.
 
 You should be all set up and ready to add locations.You can do so by doing the following steps:
--Downlaod and run the Data Collection files provided inside the Data Collection code. You can add locations by finding a the 'place_id' of a lcoation you want to add. You can use google maps to do this. 
+-Downlaod and run the Data Collection files provided inside the Data Collection code. You can add locations by finding a the 'place_id' of a location you want to add. You can use google maps to do this. 
 
 -You will need to create a new google maps api key. Do not use mine please. 
 
