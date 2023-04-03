@@ -17,14 +17,14 @@ In order to replicate my project, you can perform the following steps.
 - Then, in all the PHP pages that you downloaded with ExploreLA, modify MySQL login details to match your account.
 
 You should be all set up and ready to add locations.You can do so by doing the following steps:
--Downlaod and run the Data Collection files provided inside the Data Collection code. You can add locations by finding a the 'place_id' of a location you want to add. You can use google maps to do this. 
+-Downlaod and run the Data Collection files provided inside the Data Collection code. You can add locations by finding a the ```place_id``` of a location you want to add. You can use google maps to do this. 
 
 -You will need to create a new google maps api key. Do not use mine please. 
 
 # Code Architecture
 
-
-'function getDistanceBetweenPointsNew($latitude1, $longitude1, $latitude2, $longitude2, $unit = 'miles') {
+```
+function getDistanceBetweenPointsNew($latitude1, $longitude1, $latitude2, $longitude2, $unit = 'miles') {
   $theta = $longitude1 - $longitude2; 
   $distance = (sin(deg2rad($latitude1)) * sin(deg2rad($latitude2))) + (cos(deg2rad($latitude1)) * cos(deg2rad($latitude2)) * cos(deg2rad($theta))); 
   $distance = acos($distance); 
@@ -37,10 +37,10 @@ You should be all set up and ready to add locations.You can do so by doing the f
       $distance = $distance * 1.609344; 
   } 
   return (round($distance,2)); 
-}'
+}```
 This was an important function in my web app as is solved a huge problem I had was getting my results to be returned by proximity to you. This was aproblem because the order of queries is determined in MySQL, however. It is impossible to get data about distance away from you to be in MySQL because the value changes based onm the user's current location. This function calulates the distance of the line that connects a user's coordionates to the coordinates of the lcoation. The coordinates of the location in MySQL and a current user's lcoation are used to effectly return results by distance but only after reordering the returned array of lcoations by that calulated distance.
 
-'
+```
 while($row2 = $result2->fetch_array()){
   $PhotoID = $row2["Photo ID"];
 
@@ -64,10 +64,10 @@ echo '<div class="slide-3 w-slide">
 }</script>
                             </a>
                           </div>';}
-'
+```
 I used this code to be able to get Photo Data from Google API. I combined data from MySQL database, which inludes a table with PhotoID's that are tied to a location's PlaceID, with a location's Place ID that was obtained for each location, using PHP and an existing MySQL query.
 
-'<script>
+```<script>
           
       // Initialize and add the map
       var map;
@@ -345,6 +345,6 @@ autoRotate();
 
 
 
-      </script>'
+      </script>```
       This is the JavaScript code that I used to call live data for a specific location using google's api. The place ID is obtained via a GET form result. 
 
