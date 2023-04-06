@@ -1,5 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Wed Nov 30 2022 08:05:05 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html>
 <html data-wf-page="636af04d285d5e37a95db2a1" data-wf-site="634669433bd62dda63db2c61">
 <head>
   <meta charset="utf-8">
@@ -7,7 +6,7 @@
   <meta content="ListView" property="og:title">
   <meta content="ListView" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+ 
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/explore-la-web-app.webflow.css" rel="stylesheet" type="text/css">
